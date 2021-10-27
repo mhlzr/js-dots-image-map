@@ -68,5 +68,24 @@ body {
 }
 
 .controls {
+  padding: 1rem 0;
   user-select: none;
+}
+
+.controls > * {
+  margin: 1rem 0; 
+} 
+
+.controls fieldset {
+  display: flex;
+  gap: 2rem;
+}
+
+.controls fieldset label {
+  display: flex;
+  flex-grow: 1;
+}
+
+.controls fieldset label input {
+  width: 100%;
 }
