@@ -8,7 +8,8 @@ const addPointBtn = document.querySelector('.js-add-point');
 
 const render = () => {
   const fieldsets = Array.from(form.querySelectorAll('fieldset'));
-  const html = fieldsets.map((fieldset) => {
+  const html = fieldsets
+    .map((fieldset) => {
       const [x, y] = Array.from(fieldset.querySelectorAll('input')).map(
         (node) => parseInt(node.value, 10)
       );
@@ -29,10 +30,10 @@ safeAreaToggle.addEventListener('change', (event) => {
 });
 
 addPointBtn.addEventListener('click', () => {
-const fieldsets = Array.from(form.querySelectorAll('fieldset'));
- const clone = fieldsets[0].cloneNode(true);
- form.insertBefore(clone, addPointBtn);
- render();
+  const fieldsets = Array.from(form.querySelectorAll('fieldset'));
+  const clone = fieldsets[0].cloneNode(true);
+  form.insertBefore(clone, addPointBtn);
+  render();
 });
 
 render();
