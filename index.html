@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="stage">
+      <div class="stage__safe-area js-safe-area"></div>
+      <img class="stage__image" src="https://placeimg.com/640/480/nature" />
+      <nav class="stage__nav">
+        <ul class="stage__dots js-dots">
+          <li class="stage__dot"></li>
+        </ul>
+      </nav>
+    </div>
+
+    <form class="js-form">
+      <label>Show Safe-area<input type="checkbox" class="js-safe-area-toggle"/> </label>
+      <fieldset>
+        <label
+          >X<input type="range" min="5" max="95" value="50" step="1"
+        /></label>
+        <label
+          >Y<input type="range" min="5" max="82" value="50" step="1"
+        /></label>
+      </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
